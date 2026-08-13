@@ -191,6 +191,16 @@ export const ReportPrintModal: React.FC<ReportPrintModalProps> = ({
               </div>
             )}
 
+            {/* Operational Note */}
+            <div className="bg-[#FAF7F2] border border-[#EDE5DC] p-2.5 rounded-lg text-[11px] text-[#8B6F47] font-medium">
+              <span>
+                {isAr 
+                  ? '• ملاحظة: يتضمن شهر أبريل ٦ أيام تشغيلية فقط وليس الشهر كاملاً، نظراً لبدء فترة التقرير والتشغيل بتاريخ ٢٥ أبريل ٢٠٢٦.'
+                  : '• Note: April includes only 6 operational days rather than the full month, as reporting and operations commenced on April 25, 2026.'
+                }
+              </span>
+            </div>
+
             {/* Official Signatures */}
             <div className="pt-4 sm:pt-6 border-t border-[#EDE5DC] grid grid-cols-2 gap-4 sm:gap-8 text-xs">
               <div>

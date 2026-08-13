@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { 
   TrendingUp, Printer, Home, Layers,
-  BarChart3, CheckCircle2, Building2, MapPin, LayoutGrid, User
+  BarChart3, CheckCircle2, Building2, MapPin, LayoutGrid, User, Info
 } from 'lucide-react';
 import { 
   ResponsiveContainer, ComposedChart, Area, Line, XAxis, YAxis, 
@@ -529,6 +529,17 @@ export const OperatingReportBoard: React.FC<OperatingReportBoardProps> = ({
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* Explanatory note regarding April 6 operational days */}
+            <div className="bg-[#FAF7F2] border border-[#EDE5DC] p-3.5 rounded-xl flex items-start gap-2.5 text-xs text-[#8B6F47] font-semibold mt-3 shadow-2xs">
+              <Info className="w-4 h-4 text-[#B8865F] flex-shrink-0 mt-0.5" />
+              <span>
+                {isAr 
+                  ? 'ملاحظة: يتضمن شهر أبريل ٦ أيام تشغيلية فقط وليس الشهر كاملاً، نظراً لبدء فترة التقرير والتشغيل بتاريخ ٢٥ أبريل ٢٠٢٦.'
+                  : 'Note: April includes only 6 operational days rather than the full month, as reporting and operations commenced on April 25, 2026.'
+                }
+              </span>
             </div>
           </div>
         </section>
