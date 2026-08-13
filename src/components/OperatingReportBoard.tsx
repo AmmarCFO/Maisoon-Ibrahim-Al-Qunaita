@@ -316,6 +316,17 @@ export const OperatingReportBoard: React.FC<OperatingReportBoardProps> = ({
                 </div>
               </div>
             </div>
+
+            {/* Financial Clarification Note */}
+            <div className="bg-[#FAF7F2] border border-[#EDE5DC] p-3.5 rounded-xl flex items-start gap-2.5 text-xs text-[#8B6F47] font-medium shadow-2xs">
+              <Info className="w-4 h-4 text-[#B8865F] flex-shrink-0 mt-0.5" />
+              <span>
+                {isAr 
+                  ? 'ملاحظة مالية: يعود السبب في ظهور صافي الربح الإجمالي بالسالب إلى خصم المصاريف الرأسمالية والمصاريف المباشرة من إجمالي صافي الإيراد للمستثمر من الوحدتين، حيث تجاوزت قيمة هذه المصاريف مجموع الإيراد الصافي.'
+                  : 'Financial Note: The reason for the overall negative net profit is the deduction of capital expenditures and direct expenses from the investor\'s total net revenue for the two units, as the total of these expenses exceeded the net revenue.'
+                }
+              </span>
+            </div>
           </div>
         </section>
 

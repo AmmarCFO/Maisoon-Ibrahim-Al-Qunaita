@@ -184,7 +184,12 @@ export const initialOperatingReports: OperatingReport[] = [
       ar: "تقرير أداء التشغيل للأستاذة ميسون إبراهيم سعيد قنيطة - فرع ٥٧ (حي السحمان). سجلت الوحدات الـ ٣ متوسط نسبة إشغال إجمالية ٣٩٪ (شقة ٣ غرف ٤٢٪، شقة غرفة ٤٢٪، استوديو ٣٢٪)، بإيراد قدره ٢٠,٠٩٠٫٥٧ ريال، ومتوسط عائد شهري ٦,٢٧٨٫٣٠ ريال، ومصاريف مباشرة ٧٢٧٫٧٦ ريال، وحصة مشغل ٥,٠٢٢٫٦٤ ريال (٢٥٪)، ومصاريف رأسمالية ٠٫٠٠ ريال، وصافي عائد للعميل ١٤,٣٤٠٫١٧ ريال.",
       en: "Certified operating performance report for Maysoon Ibrahim Saeed Qunaita - Branch 57 (Al-Sahman District). The 3 units achieved an overall average occupancy rate of 39% (3BR 42%, 1BR 42%, Studio 32%), with SAR 20,090.57 revenue, SAR 6,278.30 average monthly return, SAR 727.76 direct expenses, SAR 5,022.64 operator's share (25%), SAR 0.00 capital expenditures, and SAR 14,340.17 net return to client."
     },
-    additionalRemarks: []
+    additionalRemarks: [
+      {
+        ar: "يعود السبب في ظهور صافي الربح الإجمالي بالسالب إلى خصم المصاريف الرأسمالية والمصاريف المباشرة من إجمالي صافي الإيراد للمستثمر من الوحدتين، حيث تجاوزت قيمة هذه المصاريف مجموع الإيراد الصافي.",
+        en: "The reason for the overall negative net profit is the deduction of capital expenditures and direct expenses from the investor's total net revenue for the two units, as the total of these expenses exceeded the net revenue."
+      }
+    ]
   }
 ];
 

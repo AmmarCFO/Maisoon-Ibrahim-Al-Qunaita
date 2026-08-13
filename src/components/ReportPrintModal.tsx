@@ -191,14 +191,20 @@ export const ReportPrintModal: React.FC<ReportPrintModalProps> = ({
               </div>
             )}
 
-            {/* Operational Note */}
-            <div className="bg-[#FAF7F2] border border-[#EDE5DC] p-2.5 rounded-lg text-[11px] text-[#8B6F47] font-medium">
-              <span>
+            {/* Notes Section */}
+            <div className="bg-[#FAF7F2] border border-[#EDE5DC] p-3 rounded-lg text-[11px] text-[#8B6F47] font-medium space-y-1.5">
+              <div>
                 {isAr 
-                  ? '• ملاحظة: يتضمن شهر أبريل ٦ أيام تشغيلية فقط وليس الشهر كاملاً، نظراً لبدء فترة التقرير والتشغيل بتاريخ ٢٥ أبريل ٢٠٢٦.'
-                  : '• Note: April includes only 6 operational days rather than the full month, as reporting and operations commenced on April 25, 2026.'
+                  ? '• ملاحظة تشغيلية: يتضمن شهر أبريل ٦ أيام تشغيلية فقط وليس الشهر كاملاً، نظراً لبدء فترة التقرير والتشغيل بتاريخ ٢٥ أبريل ٢٠٢٦.'
+                  : '• Operational Note: April includes only 6 operational days rather than the full month, as reporting and operations commenced on April 25, 2026.'
                 }
-              </span>
+              </div>
+              <div>
+                {isAr 
+                  ? '• ملاحظة مالية: يعود السبب في ظهور صافي الربح الإجمالي بالسالب إلى خصم المصاريف الرأسمالية والمصاريف المباشرة من إجمالي صافي الإيراد للمستثمر من الوحدتين، حيث تجاوزت قيمة هذه المصاريف مجموع الإيراد الصافي.'
+                  : '• Financial Note: The reason for the overall negative net profit is the deduction of capital expenditures and direct expenses from the investor\'s total net revenue for the two units, as the total of these expenses exceeded the net revenue.'
+                }
+              </div>
             </div>
 
             {/* Official Signatures */}
