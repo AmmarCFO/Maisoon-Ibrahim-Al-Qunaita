@@ -87,7 +87,7 @@ export const initialOperatingReports: OperatingReport[] = [
     },
     
     // Core Required Metrics
-    occupancyRate: 33,
+    occupancyRate: 39,
     totalContracts: 20090.57, // Revenue
     totalRevenue: 20090.57,   // Revenue
     avgMonthlyReturn: 6278.30,
@@ -103,7 +103,7 @@ export const initialOperatingReports: OperatingReport[] = [
         id: "U1-3BR",
         unitNumber: "1",
         unitName: { ar: "شقة ثلاث غرف نوم (3BR)", en: "3 Bedrooms (3BR)" },
-        occupancyRate: 41,
+        occupancyRate: 42,
         periodRevenue: 11721.95,
         collectedRevenue: 11721.95,
         operatorShare: 2930.49,
@@ -113,7 +113,7 @@ export const initialOperatingReports: OperatingReport[] = [
         id: "U2-1BR",
         unitNumber: "2",
         unitName: { ar: "شقة غرفة نوم واحدة (1BR)", en: "1 Bedroom (1BR)" },
-        occupancyRate: 33,
+        occupancyRate: 42,
         periodRevenue: 5130.87,
         collectedRevenue: 5130.87,
         operatorShare: 1282.72,
@@ -123,7 +123,7 @@ export const initialOperatingReports: OperatingReport[] = [
         id: "U3-STUDIO",
         unitNumber: "3",
         unitName: { ar: "استوديو (Studio)", en: "Studio" },
-        occupancyRate: 25,
+        occupancyRate: 32,
         periodRevenue: 3237.75,
         collectedRevenue: 3237.75,
         operatorShare: 809.43,
@@ -136,34 +136,34 @@ export const initialOperatingReports: OperatingReport[] = [
       {
         monthKey: "2026-04",
         monthName: { ar: "أبريل ٢٠٢٦", en: "April 2026" },
-        occupancyRate: 13,
+        occupancyRate: 21,
         threeBedRate: 39,
         oneBedRate: 0,
-        studioRate: 0
+        studioRate: 25
       },
       {
         monthKey: "2026-05",
         monthName: { ar: "مايو ٢٠٢٦", en: "May 2026" },
-        occupancyRate: 34,
+        occupancyRate: 36,
         threeBedRate: 40,
-        oneBedRate: 29,
+        oneBedRate: 35,
         studioRate: 32
       },
       {
         monthKey: "2026-06",
         monthName: { ar: "يونيو ٢٠٢٦", en: "June 2026" },
-        occupancyRate: 14,
+        occupancyRate: 24,
         threeBedRate: 6,
-        oneBedRate: 3,
+        oneBedRate: 33,
         studioRate: 34
       },
       {
         monthKey: "2026-07",
         monthName: { ar: "يوليو ٢٠٢٦", en: "July 2026" },
-        occupancyRate: 72,
-        threeBedRate: 80,
+        occupancyRate: 73,
+        threeBedRate: 83,
         oneBedRate: 100,
-        studioRate: 35
+        studioRate: 37
       }
     ],
 
@@ -181,8 +181,8 @@ export const initialOperatingReports: OperatingReport[] = [
     payoutDate: "2026-07-31",
     bankAccount: "",
     notes: {
-      ar: "تقرير أداء التشغيل للأستاذة ميسون إبراهيم سعيد قنيطة - فرع ٥٧ (حي السحمان). سجلت الوحدات الـ ٣ متوسط نسبة إشغال إجمالية ٣٣٪ (شقة ٣ غرف ٤١٪، شقة غرفة 33٪، استوديو 25٪)، بإيراد قدره ٢٠,٠٩٠٫٥٧ ريال، ومتوسط عائد شهري ٦,٢٧٨٫٣٠ ريال، ومصاريف مباشرة ٧٢٧٫٧٦ ريال، وحصة مشغل ٥,٠٢٢٫٦٤ ريال (٢٥٪)، ومصاريف رأسمالية ٠٫٠٠ ريال، وصافي عائد للعميل ١٤,٣٤٠٫١٧ ريال.",
-      en: "Certified operating performance report for Maysoon Ibrahim Saeed Qunaita - Branch 57 (Al-Sahman District). The 3 units achieved an overall average occupancy rate of 33% (3BR 41%, 1BR 33%, Studio 25%), with SAR 20,090.57 revenue, SAR 6,278.30 average monthly return, SAR 727.76 direct expenses, SAR 5,022.64 operator's share (25%), SAR 0.00 capital expenditures, and SAR 14,340.17 net return to client."
+      ar: "تقرير أداء التشغيل للأستاذة ميسون إبراهيم سعيد قنيطة - فرع ٥٧ (حي السحمان). سجلت الوحدات الـ ٣ متوسط نسبة إشغال إجمالية ٣٩٪ (شقة ٣ غرف ٤٢٪، شقة غرفة ٤٢٪، استوديو ٣٢٪)، بإيراد قدره ٢٠,٠٩٠٫٥٧ ريال، ومتوسط عائد شهري ٦,٢٧٨٫٣٠ ريال، ومصاريف مباشرة ٧٢٧٫٧٦ ريال، وحصة مشغل ٥,٠٢٢٫٦٤ ريال (٢٥٪)، ومصاريف رأسمالية ٠٫٠٠ ريال، وصافي عائد للعميل ١٤,٣٤٠٫١٧ ريال.",
+      en: "Certified operating performance report for Maysoon Ibrahim Saeed Qunaita - Branch 57 (Al-Sahman District). The 3 units achieved an overall average occupancy rate of 39% (3BR 42%, 1BR 42%, Studio 32%), with SAR 20,090.57 revenue, SAR 6,278.30 average monthly return, SAR 727.76 direct expenses, SAR 5,022.64 operator's share (25%), SAR 0.00 capital expenditures, and SAR 14,340.17 net return to client."
     },
     additionalRemarks: []
   }

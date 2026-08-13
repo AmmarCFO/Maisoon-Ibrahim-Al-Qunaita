@@ -167,10 +167,29 @@ export const OperatingReportBoard: React.FC<OperatingReportBoardProps> = ({
                 </div>
               </div>
               <div className="flex flex-wrap gap-1.5 pt-0.5">
-                <span className="inline-flex items-center gap-1 bg-white text-[#1d1d1f] px-2 py-1 rounded-lg border border-[#EDE5DC] text-[11px] font-extrabold shadow-2xs">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#B8865F]" />
-                  {isAr ? 'وحدات سكنية' : 'Residential Units'}
-                </span>
+                {report.unitReports && report.unitReports.length > 0 ? (
+                  report.unitReports.map((u, idx) => (
+                    <span key={u.id || idx} className="inline-flex items-center gap-1 bg-white text-[#1d1d1f] px-2 py-1 rounded-lg border border-[#EDE5DC] text-[11px] font-extrabold shadow-2xs">
+                      <span className={`w-1.5 h-1.5 rounded-full ${idx === 0 ? 'bg-blue-500' : idx === 1 ? 'bg-emerald-500' : 'bg-amber-500'}`} />
+                      {u.unitName[isAr ? 'ar' : 'en']}
+                    </span>
+                  ))
+                ) : (
+                  <>
+                    <span className="inline-flex items-center gap-1 bg-white text-[#1d1d1f] px-2 py-1 rounded-lg border border-[#EDE5DC] text-[11px] font-extrabold shadow-2xs">
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+                      {isAr ? 'شقة ثلاث غرف (3BR)' : '3 Bedrooms (3BR)'}
+                    </span>
+                    <span className="inline-flex items-center gap-1 bg-white text-[#1d1d1f] px-2 py-1 rounded-lg border border-[#EDE5DC] text-[11px] font-extrabold shadow-2xs">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                      {isAr ? 'شقة غرفة نوم (1BR)' : '1 Bedroom (1BR)'}
+                    </span>
+                    <span className="inline-flex items-center gap-1 bg-white text-[#1d1d1f] px-2 py-1 rounded-lg border border-[#EDE5DC] text-[11px] font-extrabold shadow-2xs">
+                      <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                      {isAr ? 'استوديو (Studio)' : 'Studio'}
+                    </span>
+                  </>
+                )}
               </div>
             </div>
           </div>
